@@ -75,7 +75,7 @@ const runTests = () => {
     console.log('Running test: ' + test.name)
     for (let j = 0; j < test.plates.length; j++) {
       const plate = test.plates[j]
-      const result = getReg(plate.value)
+      const result = getRegDate(plate.value)
       if (result !== plate.expect) {
         failedTests++
         console.log(

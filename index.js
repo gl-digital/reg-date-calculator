@@ -14,7 +14,8 @@ getRegDate = startDate => {
     }
   } else if (year < 2002) {
     //Post 1999 and Pre-2002 registrations follow no reliable pattern
-    const laterAlphabetRange = [{
+    const laterAlphabetRange = [
+      {
         low: '1999-01-01',
         high: '1999-02-28',
         reg: 'S'
@@ -77,3 +78,5 @@ const pad = (n, width, z) => {
   n = n + ''
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n
 }
+
+exports.getRegDate = getRegDate

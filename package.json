@@ -1,0 +1,20 @@
+{
+  "name": "reg-date-calculator",
+  "version": "1.0.0",
+  "description":
+    "Calculates a vehicles UK Registration date section based on it's first date registered",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/systempioneer/reg-date-calculator.git"
+  },
+  "author": "System Pioneer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/systempioneer/reg-date-calculator/issues"
+  },
+  "homepage": "https://github.com/systempioneer/reg-date-calculator#readme"
+}
