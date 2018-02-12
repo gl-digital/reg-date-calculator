@@ -1,6 +1,6 @@
 const reg_alphabet = 'ABCDEFGHJKLMNPRSTVWXY'
 
-getReg = startDate => {
+getRegDate = startDate => {
   const date = new Date(startDate)
   const year = date.getFullYear()
   const month = date.getMonth()
@@ -14,14 +14,41 @@ getReg = startDate => {
     }
   } else if (year < 2002) {
     //Post 1999 and Pre-2002 registrations follow no reliable pattern
-    const laterAlphabetRange = [
-      { low: '1999-01-01', high: '1999-02-28', reg: 'S' },
-      { low: '1999-03-01', high: '1999-08-31', reg: 'T' },
-      { low: '1999-09-01', high: '2000-02-29', reg: 'V' },
-      { low: '2000-03-01', high: '2000-08-31', reg: 'W' },
-      { low: '2000-09-01', high: '2001-02-28', reg: 'X' },
-      { low: '2001-03-01', high: '2001-08-31', reg: 'Y' },
-      { low: '2001-09-01', high: '2001-12-31', reg: '51' }
+    const laterAlphabetRange = [{
+        low: '1999-01-01',
+        high: '1999-02-28',
+        reg: 'S'
+      },
+      {
+        low: '1999-03-01',
+        high: '1999-08-31',
+        reg: 'T'
+      },
+      {
+        low: '1999-09-01',
+        high: '2000-02-29',
+        reg: 'V'
+      },
+      {
+        low: '2000-03-01',
+        high: '2000-08-31',
+        reg: 'W'
+      },
+      {
+        low: '2000-09-01',
+        high: '2001-02-28',
+        reg: 'X'
+      },
+      {
+        low: '2001-03-01',
+        high: '2001-08-31',
+        reg: 'Y'
+      },
+      {
+        low: '2001-09-01',
+        high: '2001-12-31',
+        reg: '51'
+      }
     ]
     for (let k = 0; k < laterAlphabetRange.length; k++) {
       const r = laterAlphabetRange[k]
